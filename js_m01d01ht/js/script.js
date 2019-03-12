@@ -1,6 +1,38 @@
 'use strict'
 
+const adminLogin = 'admin';
+const adminPassword = 'm4ngo1zh4ackz0r';
 
+const adminLoginAccessSkiped = 'Отменено пользователем!';
+const adminLoginAccessWrong = 'Доступ запрещен, неверный логин!';
+
+const adminPasswordAccessSkiped = 'Отменено пользователем!';
+const adminPasswordAccessWrong = 'Доступ запрещен, неверный пароль!';
+
+const adminAccessGreat = 'Добро пожаловать!';
+
+const login = prompt('enter your login');
+
+if (login === null) {
+    alert (adminLoginAccessSkiped);
+} else if (login !== adminLogin) {
+    alert (adminLoginAccessWrong);
+} else {
+    const password = prompt('enter your password');
+
+if (password === null) {
+    alert (adminPasswordAccessSkiped);
+} else if (password !== adminPassword) {
+    alert (adminPasswordAccessWrong);
+} else {
+    alert (adminAccessGreat);
+ }
+} 
+
+
+
+
+// ========================================================================================================
 // const taba = 6;
 // const sharm = 15;
 // const hurgada = 25;
@@ -29,7 +61,7 @@
 //   alert ('Нам очень жаль, приходите еще!');
 // }
 
-
+// =============================================================================================================
 // const sharm = 15;
 // const hurgada = 25;
 // const taba = 6;
@@ -67,34 +99,6 @@
 //   alert ('Нам очень жаль, приходите еще!')
 // }
 
-// const adminLogin = 'admin';
-// const adminPassword = 'm4ngo1zh4ackz0r';
-
-// const adminLoginAccessSkiped = 'Отменено пользователем!';
-// const adminLoginAccessWrong = 'Доступ запрещен, неверный логин!';
-
-// const adminPasswordAccessSkiped = 'Отменено пользователем!';
-// const adminPasswordAccessWrong = 'Доступ запрещен, неверный пароль!';
-
-// const adminAccessGreat = 'Добро пожаловать!';
-
-// const login = prompt('enter your login');
-
-// if (login === null) {
-//     alert (adminLoginAccessSkiped);
-// } else if (login !== adminLogin) {
-//     alert (adminLoginAccessWrong);
-// } else {
-//     const password = prompt('enter your password');
-
-// if (password === null) {
-//     alert (adminPasswordAccessSkiped);
-// } else if (password !== adminPassword) {
-//     alert (adminPasswordAccessWrong);
-// } else {
-//     alert (adminAccessGreat);
-//  }
-// } 
 
 
 
@@ -222,29 +226,29 @@
 
 // __________________________________________Доп-10____________________________________________
 
-/* 
-  Создайте срипт поиска отелей, где пользователь 
-  с помощью prompt должен ввести число от 1 до 5
+// /* 
+//   Создайте срипт поиска отелей, где пользователь 
+//   с помощью prompt должен ввести число от 1 до 5
   
-  Проверить что пользователь ввел именно цифру от 1 до 5
+//   Проверить что пользователь ввел именно цифру от 1 до 5
   
-  Если пользователь нажал Cancel, то вывести 
-  alert с текстом 'очень жаль, приходите еще!'
+//   Если пользователь нажал Cancel, то вывести 
+//   alert с текстом 'очень жаль, приходите еще!'
   
-  Если было введено что либо кроме чисел 1-5, 
-  вывести alert с текстом 'Неверный ввод, возможные варианты 1-5!'
+//   Если было введено что либо кроме чисел 1-5, 
+//   вывести alert с текстом 'Неверный ввод, возможные варианты 1-5!'
   
-  Если же пользовател ввел валидное число, 
-  в зависимости от числа, используя switch, 
-  вывести alert с одной из строк:
+//   Если же пользовател ввел валидное число, 
+//   в зависимости от числа, используя switch, 
+//   вывести alert с одной из строк:
   
-    1 - "Каталог хостелов" 
-    2 - "Каталог бюджетных отелей"
-    3 - "Каталог отелей ***"
-    4 - "Каталог отелей ****"
-    5 - "Каталог лучших отелей"
-*/
-// _____________________________________________Решение_______________________________________________
+//     1 - "Каталог хостелов" 
+//     2 - "Каталог бюджетных отелей"
+//     3 - "Каталог отелей ***"
+//     4 - "Каталог отелей ****"
+//     5 - "Каталог лучших отелей"
+// */
+// // _____________________________________________Решение_______________________________________________
 
-let inputUser = +prompt('Enter your number from 1 to 5');
-inputUser >= 1 || inputUser <=5 || Number.isNaN(inputUser) 
+// let inputUser = +prompt('Enter your number from 1 to 5');
+// inputUser >= 1 || inputUser <=5 || Number.isNaN(inputUser) 
