@@ -520,33 +520,33 @@
   Расставьте отсутствующие this в конструкторе объектов Account
 */
 
-function Account(login, password, type = "regular") {
-  this.login = login;
-  this.password = password;
-  this.type = type;
+// function Account(login, password, type = "regular") {
+//   this.login = login;
+//   this.password = password;
+//   this.type = type;
 
-  this.changePassword = function(newPassword) {
-    this.password = newPassword;
+//   this.changePassword = function(newPassword) {
+//     this.password = newPassword;
 
-    console.log(this.password);
-  };
+//     console.log(this.password);
+//   };
 
-  this.getAccountInfo = function() {
-    console.log(`
-      Login: ${this.login}, 
-      Pass: ${this.password}, 
-      Type: ${this.type}
-    `);
-  };
-}
+//   this.getAccountInfo = function() {
+//     console.log(`
+//       Login: ${this.login}, 
+//       Pass: ${this.password}, 
+//       Type: ${this.type}
+//     `);
+//   };
+// }
 
-const account = new Account("Mango", "qwe123", "premium");
+// const account = new Account("Mango", "qwe123", "premium");
 
-console.log(account.login); // 'Mango'
-console.log(account.password); // 'qwe123'
-console.log(account.type); // 'premium'
+// console.log(account.login); // 'Mango'
+// console.log(account.password); // 'qwe123'
+// console.log(account.type); // 'premium'
 
-account.changePassword("asdzxc"); // 'asdzxc'
+// account.changePassword("asdzxc"); // 'asdzxc'
 
-account.getAccountInfo(); // Login: 'Mango', Pass: 'asdzxc', Type: 'premium'
+// account.getAccountInfo(); // Login: 'Mango', Pass: 'asdzxc', Type: 'premium'
 
