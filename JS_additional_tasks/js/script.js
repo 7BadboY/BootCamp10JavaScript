@@ -67,3 +67,16 @@
 // Необходимо написать программу, где бы пользователю предлагалось ввести число  1. 
 // Если пользователь ввёл число 1, программа должна вывести сообщение: "Вы ввели число 1". 
 // Если пользователь ввёл другое число, программа должна вывести такое сообщение: "Вы ввели число не равное 1"
+
+// const userInput = Number(prompt('Enter number 1'));
+// const sum = 1;
+//     if (userInput !== sum) {
+//         prompt("You etner not a 1")
+//     } else {
+//         alert('you Enter number 1')
+//     };
+// const userInput = Number(prompt('Enter number 1'));
+// const sum = 1;
+// const wass = userInput !== sum ? prompt("You etner not a 1") : alert('you Enter number 1');
+// ___________________________________________________________________________________________________________
+
