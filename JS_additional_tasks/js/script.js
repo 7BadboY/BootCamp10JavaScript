@@ -80,3 +80,17 @@
 // const wass = userInput !== sum ? prompt("You etner not a 1") : alert('you Enter number 1');
 // ___________________________________________________________________________________________________________
 
+const double = arr => {
+    const results = [];
+  
+    for (let i = 0; i < arr.length; i += 1){
+      results.push(arr[i] * 2);
+    }
+
+    console.log(results);
+    
+  
+    return results;
+    
+  }
+  
