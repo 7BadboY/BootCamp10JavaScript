@@ -86,9 +86,6 @@ const double = arr => {
     for (let i = 0; i < arr.length; i += 1){
       results.push(arr[i] * 2);
     }
-
-    console.log(results);
-    
   
     return results;
     
