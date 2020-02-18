@@ -319,50 +319,50 @@
 //     break;
 // }
 // --------------------------------------    Clean version   -----------------------------------------------
-// const PRINT_COUNTRY =
-//   "Напишите название страны в которую нужно доставить товар";
-// const USER_CANCEL = "Отменено пользователем!";
-// const NOT_DELIVERY = "В вашей стране доставка не доступна";
+const PRINT_COUNTRY =
+    "Напишите название страны в которую нужно доставить товар";
+const USER_CANCEL = "Отменено пользователем!";
+const NOT_DELIVERY = "В вашей стране доставка не доступна";
 
-// let countryName;
-// let message = prompt(PRINT_COUNTRY);
-// let credits = 0;
+let countryName;
+let message = prompt(PRINT_COUNTRY);
+let credits = 0;
 
-// if (message === null) {
-//   message = USER_CANCEL;
-// } else {
-//   countryName = message[0].toUpperCase() + message.slice(1).toLowerCase();
+if (message === null) {
+    message = USER_CANCEL;
+} else {
+    countryName = message[0].toUpperCase() + message.slice(1).toLowerCase();
 
-//   switch (countryName) {
-//     case "Китай":
-//       credits = 100;
-//       break;
+    switch (countryName) {
+        case "Китай":
+            credits = 100;
+            break;
 
-//     case "Южная америка":
-//       credits = 250;
-//       break;
+        case "Южная америка":
+            credits = 250;
+            break;
 
-//     case "Австралия":
-//       credits = 170;
-//       break;
+        case "Австралия":
+            credits = 170;
+            break;
 
-//     case "Индия":
-//       credite = 80;
-//       break;
+        case "Индия":
+            credite = 80;
+            break;
 
-//     case "Ямайка":
-//       credits = 120;
-//       break;
+        case "Ямайка":
+            credits = 120;
+            break;
 
-//     default:
-//       message = NOT_DELIVERY;
-//       break;
-//   }
-// }
-// if (credits > 0) {
-//   message = `Доставка в ${countryName} будет стоить ${credits} кредитов`;
-// }
-// alert(message);
+        default:
+            message = NOT_DELIVERY;
+            break;
+    }
+}
+if (credits > 0) {
+    message = `Доставка в ${countryName} будет стоить ${credits} кредитов`;
+}
+alert(message);
 
 // =========================================================================================================
 
@@ -382,4 +382,3 @@
 //   total += input;
 // } while (input);
 // alert(`Общая сумма чисел равна ${total}`);
-
